@@ -16,7 +16,7 @@ function averageMark(a, g, p) {
 	result = (algebra + geography + physics)/3;
    
 
-	return(result); // ваш ответ;
+	return result; // ваш ответ;
 }
 
 function sayHello(userName) {
@@ -24,11 +24,10 @@ function sayHello(userName) {
     let myName;
 
     myName = userName;
-
-    message = 'Привет, мир! Меня зовут ' + myName;
+    message = `Привет, мир! Меня зовут ${myName}`;
     // реализуйте здесь задание №2
     
-	return (message);
+	return message;
 }
 
 function calculateFormula() {
@@ -41,5 +40,5 @@ function calculateFormula() {
     
     result = x * y + 5 * z + x - 1;
     
-    return(result);
+    return result;
 }
