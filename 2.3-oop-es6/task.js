@@ -108,8 +108,9 @@ giveBookByName(bookName){
      if (book === -1) { 
         console.log(book)
        return null
-     } else {
-       this.books.splice(book, 1);
+     } else { 
+       let bookD = ((this.books.splice(book, 1)));
+       return bookD.pop();
      }
  } 
 }
