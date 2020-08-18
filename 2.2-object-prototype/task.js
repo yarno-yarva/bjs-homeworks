@@ -1,17 +1,19 @@
-
 String.prototype.isPalindrome = function () {
   let str = this;
-  let string = str.toLowerCase(); 
-  return string === string.split('').reverse().join('');
+  let string = str.toLowerCase();
+  const cleanStr = string.replace(/\s+/g, '');  
+  const reverseStr = cleanStr.split('').reverse().join('');
+  return cleanStr === reverseStr;
 }
 
-
 function getAverageMark(marks) {
-
+      if (marks.length === 0) {
+        return 0 
+      } else {
     {
     let averageMark = marks.reduce((a, b) => (a + b)) / marks.length;;
     return Math.round(averageMark);
-
+}
    }
    
 }
